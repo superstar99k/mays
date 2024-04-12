@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+body{
+  overflow-x: hidden;
+}
+
+.top__image{
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+}
+
+.top__image img{
+  width: 100%;
+}
+
+
+#product {
+  padding: 100px 15px 50px;
+  background: white;
+  font-size: 14px;
+  max-width: 1010px;
+  width: 100%;
+  margin: auto;
+  color: black;
+}
+
+#product .ttl{
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+#product .ttl__header {
+  color: #666666;
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: .15em;
+  text-indent: 0.15em;
+  font-family: 'garamond-premier-pro-display', serif;
+}
+
+#product .ttl__desp{
+  color: #999999;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: .1em;
+  text-indent: 0.1em;
+  font-family: 'garamond-premier-pro-display', serif;
+}
+
+/* ----------- content ------------ */
+
+#product .content{
+  display: flex;
+}
+
+/* ---------- product category   ----------- */
+
+#product .category__list{
+  width: 150px;
+  margin-right: 10px;
+}
+
+#product .category__list li{
+  padding: 5px 0;
+  text-align: center;
+}
+
+#product .category__list li a{
+  border-radius: 4px;
+  border: 1px solid #babcbc;
+  color: #222;
+  display: inline-block;
+  padding: 7px 5px;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+}
+
+#product .category__list li a:hover, 
+#product .category__list li a.active{
+  background: #bbb;
+  color: white;
+}
+
+/* --------   product item ------------ */
+
+#product .product__list{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 160px);
+}
+
+#product .product__list .slick-list{
+  width: 100%;
+}
+
+#product .product__card{
+  display: inline-block;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+#product .product__item{
+  /* padding: 15px; */
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+}
+
+#product .product__card:hover .product__item{
+  /* background-color: #eee; */
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 25%);
+  transition: .3s all;
+}
+
+#product .product__image {
+  padding: 8px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+#product .product__image .img{
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#product .product__desp{
+  padding: 5px 10px 15px;
+  position: relative;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", arial, sans-serif;
+}
+
+#product .product__desp .brand{
+  font-size: 12px;
+  color: #b9b9b9;
+  line-height: normal;
+}
+
+#product .product__desp .name, 
+#product .product__desp .price{
+  color: #333;
+  line-height: normal;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+
+#product .chbox{
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+#product input[type=checkbox]{
+  transform: scale(1.7);
+}
+
+
+/* ---------- Contact Form --------- */
+
+#product-contact .purchase-contact-confirm{
+  padding: 0 15px;
+  max-width: 600px;
+}
+
+#product-contact .purchase-contact-confirm .products .value div{
+  width: unset;
+  margin: 10px;
+}
+
+#product-contact .wpcf7{
+  padding: 0 15px;
+}
+
+#product-contact .wpcf7 form p:nth-last-child(2) input[type="submit"]{
+  margin-top: 30px;
+}
+
+#product-contact .wpcf7 .sub-title{
+  margin: 20px 0;
+}
+
+#product-contact .wpcf7 .d-flex label{
+  width: 200px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  #product{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  #product .content{
+    display: block;
+  }
+  #product .category__list{
+    margin: 0 auto 10px;
+  }
+  #product .product__list{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------
+          Product Detail 
+----------------------------------- */
+
+#product-detail{
+  padding-bottom: 50px;
+  background: white;
+  font-size: 14px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  color: black;
+}
+
+#product-detail #case2{
+  display: flex;
+  padding-bottom: 0px;
+}
+
+#product-detail #cased1{
+  max-width: 400px;
+  width: 100%;
+}
+
+#product-detail #cased11{
+  height: auto;
+}
+
+#product-detail #cased21{
+  text-align: left;
+}
+
+/* #product-detail #cased22 dt{
+  width: 125px;
+}
+
+#product-detail #cased22 dd{
+  font-size: 16px;
+} */
+
+#product-detail #cased4 a{
+  /* font-size: 14px; */
+  padding: 15px;
+}
+
+
+#product-detail .brand{
+  display: inline-flex;
+  color: #b9b9b9;
+  margin-bottom: 50px;
+  margin-left: 40px;
+} 
+#product-detail .brand dt{
+  width: 133px;
+}
+
+@media (max-width: 1200px) {
+  #product-detail #case2{
+    display: block;
+  }
+
+  #product-detail #cased1{
+    max-width: 500px;
+  }
+
+  #product-detail #cased2{
+    max-width: 620px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+
+
+
